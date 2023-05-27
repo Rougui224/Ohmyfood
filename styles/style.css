@@ -218,8 +218,34 @@ header h3 {
   margin: 22px;
 }
 
-footer {
+.footer {
   width: 100%;
   height: 186px;
   background-color: #353535;
+  padding: 22px 25px;
+}
+.footer__logo {
+  width: 137.58px;
+  height: 27px;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.footer__link {
+  height: 90px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 16px;
+}
+.footer__link__text {
+  display: inline-block;
+  text-decoration: none;
+  height: 20px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
