@@ -108,6 +108,9 @@ header h3 {
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
+.fonctioning__button--margin {
+  margin-top: 0px;
+}
 .fonctioning__button__number {
   width: 24px;
   height: 24px;
@@ -134,4 +137,9 @@ header h3 {
   font-weight: 500;
   font-size: 16px;
   color: black;
+}
+
+.restaurantTitle {
+  width: 275px;
+  height: 63px;
 }/*# sourceMappingURL=style.css.map */

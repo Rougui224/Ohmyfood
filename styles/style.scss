@@ -116,6 +116,9 @@ header{
         background: #F7F7F7;
         border-radius: 20px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        &--margin{
+            margin-top: 0px;
+        }
         &__number{
             width: 24px;
             height: 24px;
@@ -146,4 +149,9 @@ header{
         }
     }
 
+}
+
+.restaurantTitle{
+    width: 275px;
+    height: 63px;
 }
