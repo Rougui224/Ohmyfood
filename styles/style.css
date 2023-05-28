@@ -82,6 +82,7 @@ header h3 {
   color: #fff;
   transition: all 800ms ease-in-out;
   position: relative;
+  z-index: 2;
 }
 .informationButton__active {
   position: absolute;
@@ -92,9 +93,9 @@ header h3 {
   background-color: rgba(137, 200, 250, 0.5);
   opacity: 0.4;
   border: #003A68 solid 1px;
-  z-index: 2;
-  display: none;
+  z-index: 1;
   transition: 2s ease-in-out;
+  display: none;
 }
 .informationButton:hover, .informationButton:focus {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -170,6 +171,10 @@ header h3 {
   font-weight: 700;
   font-size: 24px;
   margin: auto;
+}
+
+svg {
+  background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .restaurantCard {
