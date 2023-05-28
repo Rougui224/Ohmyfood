@@ -40,13 +40,15 @@
         Découvrez des restaurants d'exception, selectionnés par nos soins.
     </p>
 
-    <a href="#" class="informationButton">
+    <a href="#Explorer" class="informationButton">
         <p> Explorer nos restaurants </p>
+        <div id="Cartes" class="informationButton__active"></div>
     </a>
 
     <div class="fonctioning">
         <div class="fonctioning__text"> Fonctionnement</div>
-        <a href="#" class="fonctioning__button">
+        <section>
+         <a href="#Cartes" class="fonctioning__button">
             <div class="fonctioning__button__number">
                1
             </div>
@@ -57,7 +59,7 @@
                 Choisissez un restarant
             </div>
         </a>
-        <a href="#" class="fonctioning__button fonctioning__button--margin">
+         <a href="#Cartes" class="fonctioning__button fonctioning__button--margin">
             <div class="fonctioning__button__number "
             >2</div>
             <div class="fonctioning__button__icon">
@@ -67,8 +69,8 @@
                 Composez votre menu
             </div>
 
-        </a>
-        <a href="#" class="fonctioning__button fonctioning__button--margin">
+         </a>
+         <a href="#Cartes" class="fonctioning__button fonctioning__button--margin">
             <div class="fonctioning__button__number">3</div>
             <div class="fonctioning__button__icon">
                 <i class="fa-solid fa-store" style="color: 
@@ -77,13 +79,19 @@
             <div class="fonctioning__button__text">
                 Dégustez au restaurant
             </div>
-        </a>
+         </a>
+      </section>
 
     </div>
 
+    <section class="allCard">
+
     <div class="restaurantTitle">Restaurants</div>
 
-    <a href="#" class="restaurantCard">
+    <section class="tooCard">
+
+    <a id="Explorer" href="#" class="restaurantCard">
+        <div class="informationButton__active"></div>
         <div class="restaurantCard__pic">
             <div class="restaurantCard__pic__new">Nouveau</div>
         </div>
@@ -94,11 +102,13 @@
             </div>
             <div class="restaurantCard__text__icon">
                 <i class="fa-regular fa-heart" style="color: #101010;"></i>
+                <i class="fa-duotone fa-heart" style="--fa-primary-color: #9356DC; --fa-primary-opacity: 0.3; --fa-secondary-color: #FF79DA;"></i>
             </div>
         </div>
     </a>
 
     <a href="#" class="restaurantCard">
+        <div class="informationButton__active"></div>
         <div class="restaurantCard__pic restaurantCard__pic--background2">
             <div class="restaurantCard__pic__new">Nouveau</div>
         </div>
@@ -113,8 +123,11 @@
             </div>
         </div>
     </a>
+</section>
+<section class="tooCard tooCard--margin">
 
     <a href="#" class="restaurantCard">
+        <div class="informationButton__active"></div>
         <div class="restaurantCard__pic restaurantCard__pic--background3">
         </div>
         <div class="restaurantCard__text">
@@ -129,6 +142,7 @@
     </a>
 
     <a href="#" class="restaurantCard">
+        <div class="informationButton__active"></div>
         <div class="restaurantCard__pic restaurantCard__pic--background4">
         </div>
         <div class="restaurantCard__text">
@@ -141,6 +155,8 @@
             </div>
         </div>
     </a>
+</section>
+</section>
 
     <footer class="footer">
         <div class="footer__logo"> ohmyfood</div>
@@ -153,8 +169,8 @@
                 <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i>
                 <span>Devenir partenaire</span>
             </a>
-            <a href="#" class="footer__link__text">Mentions légales</a>
-            <a href="#" class="footer__link__text">Contact</a>
+            <a href="#" class="footer__link__text footer__link__text--fSize">Mentions légales</a>
+            <a href="#" class="footer__link__text footer__link__text--fSize">Contact</a>
         </div>
 
     </footer>
