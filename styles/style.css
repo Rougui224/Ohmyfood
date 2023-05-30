@@ -191,7 +191,7 @@ svg {
   right: 10px;
   z-index: 3;
   opacity: 0;
-  transition: all 350ms ease-in-out;
+  transition: all 850ms ease-in-out;
 }
 
 .fa-heart {
