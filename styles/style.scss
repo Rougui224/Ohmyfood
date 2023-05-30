@@ -201,28 +201,28 @@ path{
 
   svg{
     position:absolute; 
-    top: 1px;
-    right: 10px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     z-index: 3;
     opacity: 0;
-    transition:  all 850ms ease-in-out;
+    transition: all 850ms ease-in-out;
    
   }
 
   .fa-heart{
     color: #101010;
+    
+
   
   }
-  svg:hover .fa-heart{
-    display: none;
-  }
+ 
 
 svg:hover{
     opacity: 1;
     transform: scale(1.088);
-    top:1px;
-    right: 9.5px;
-    
+
 }
 
 .restaurantCard{
@@ -244,17 +244,20 @@ svg:hover{
         height: 174px;
         background-image: url(../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;
         background-size: cover;
+
         &--background2{
             background-position: center;
             background-image: url(../images/photo2.jpg);
            
         }
         &--background3{
+           
             background-position: center bottom;
             background-image: url(../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         }
 
         &--background4{
+          
             background-position: center bottom;
             background-image: url(../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         }
@@ -301,11 +304,14 @@ svg:hover{
             }
         }
         &__icon{
-            width: 38px;
+            width:  24px;
             height: 21px;
             font-size: 22px;
             margin: 22px;
             position: relative;
+            &:hover .fa-heart{
+                display: none;
+            }
           
           
           
