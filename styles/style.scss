@@ -187,8 +187,42 @@ header{
     margin: auto;
 }
 
-svg{
-    background-color: $background;
+
+path{
+    fill:url(#heartHover);
+    
+ }
+  .stop1{
+    stop-color:#9356DC  ;
+  }
+  .stop2{
+    stop-color: #FF79DA;
+  }
+
+  svg{
+    position:absolute; 
+    top: 1px;
+    right: 10px;
+    z-index: 3;
+    opacity: 0;
+    transition:  all 350ms ease-in-out;
+   
+  }
+
+  .fa-heart{
+    color: #101010;
+  
+  }
+  svg:hover .fa-heart{
+    display: none;
+  }
+
+svg:hover{
+    opacity: 1;
+    transform: scale(1.088);
+    top:1px;
+    right: 9.5px;
+    
 }
 
 .restaurantCard{
@@ -244,6 +278,7 @@ svg{
         width: 100%;
         height:77px;
         display: flex;
+        position: relative;
         &__description{
             width: 85%;
             height: 100%;
@@ -266,13 +301,14 @@ svg{
             }
         }
         &__icon{
-            width: 22px;
+            width: 38px;
             height: 21px;
             font-size: 22px;
             margin: 22px;
-            .fa-solid{
-                background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
-            }
+            position: relative;
+          
+          
+          
         }
     }
 }
