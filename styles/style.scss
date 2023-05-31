@@ -309,6 +309,7 @@ svg:hover{
             font-size: 22px;
             margin: 22px;
             position: relative;
+            transition: 1s ease-in-out;
             &:hover .fa-heart{
                 display: none;
             }
