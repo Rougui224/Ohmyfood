@@ -172,10 +172,11 @@ hr{
  
   &:hover &__hover{
     display: flex;
+    width: 59px;
   }
   &:hover &__text {
     width: 80%;
-   
+    border-radius: 15px 0px 0px 15px;
   }
   &:hover h3 {
     width: 85%;
@@ -186,7 +187,7 @@ hr{
 
 
   &__text{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     padding: 12px 0px 12px 15px;
@@ -227,12 +228,11 @@ hr{
     &__price{
       height: 18px;
       width: 27px;
-      margin-right: 35px;
+      padding-right: 35px;
   
     }
   }
   &__hover{
-    width: 59px;
     height: 69px;
     display: flex;
     justify-content: center;
@@ -241,7 +241,6 @@ hr{
     background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
     position: relative;
-    right: 10px;
     z-index: 0;
     display: none;
     transition: all 500ms ease-in-out;
@@ -290,5 +289,103 @@ hr{
       }
   }
 }
+
+@media screen and (max-width: 360px){
+  .menu__heading__text {
+    font-size: 17px;
+  }
+  .menuEntrance__text{
+    font-size: 13px;
+  }
+
+  .menuEntrance__items{
+    width: 91%;
+  }
+
+  .menuEntrance__items__text__writing{
+    width: 85%;
+    h3{
+      font-size: 13px;
+    }
+
+    p{
+      font-size: 10px;
+      width: 95%;
+
+    }
+  }
+  .menuEntrance__items__text__price{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width:767px) {
+  body {
+    background-color: #fff;
+  }
+  .menu{
+    width: 70%;
+    margin: auto;
+    height: 1135px;
+    border-radius: 40px 40px 0px 0px;
+
+  }
+  .footer{
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-top: -55px;
+    &__logo{
+        margin: 20px;
+
+    }
+    &__link{
+        width: 630px;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 14px;
+        margin: 20px;
+    }
+}
+}
+
+@media screen and (min-width:1024px) {
+  body {
+    background-color: #fff;
+  }
+  .menu{
+    height: 1135px;
+    width: 1055px;
+    margin: auto;
+   border-radius: 40px 40px 0px 0px;
+  }
+
+  .menuEntrance__items__text{
+    gap: 77px;
+  }
+
+  .footer{
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-top: -55px;
+    &__logo{
+        margin: 20px;
+
+    }
+    &__link{
+        width: 630px;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 14px;
+        margin: 20px;
+    }
+}
+}
+
+
+
 
 
