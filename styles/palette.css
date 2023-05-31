@@ -46,7 +46,7 @@ header .logo {
 }
 
 .menu {
-  height: 1307px;
+  height: 1085px;
   width: 100%;
   background-color: #F7F7F7;
   border-radius: 40px;
@@ -108,6 +108,28 @@ header .logo {
   opacity: 1;
   transform: scale(1.088);
 }
+.menu__button {
+  width: 186px;
+  height: 50px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 800ms ease-in-out;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.menu__button:hover, .menu__button:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+.menu__button h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
 
 .menuEntrance__text {
   margin-top: 42px;
@@ -143,6 +165,9 @@ header .logo {
 .menuEntrance__items:hover .menuEntrance__items__text {
   width: 80%;
 }
+.menuEntrance__items:hover h3 {
+  width: 85%;
+}
 .menuEntrance__items__text {
   width: 100%;
   height: 100%;
@@ -166,6 +191,9 @@ header .logo {
   font-size: 18px;
   width: 100%;
   height: 21px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menuEntrance__items__text__writing p {
   font-weight: 300;
@@ -196,4 +224,43 @@ header .logo {
   z-index: 0;
   display: none;
   transition: all 500ms ease-in-out;
+}
+
+.footer {
+  width: 100%;
+  height: 195px;
+  background-color: #353535;
+  padding-top: 20px;
+}
+.footer__logo {
+  width: 137.58px;
+  height: 27px;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 22px 0px 0px 25px;
+}
+.footer__link {
+  height: 90px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 22px 0px 0px 25px;
+}
+.footer__link__text {
+  display: inline-block;
+  text-decoration: none;
+  height: 20px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+}
+.footer__link__text--margin {
+  margin-left: 5px;
+}
+.footer__link__text--fSize {
+  font-weight: 300;
 }/*# sourceMappingURL=palette.css.map */

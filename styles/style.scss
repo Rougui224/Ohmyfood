@@ -1,4 +1,6 @@
 @import 'Utils/_variables.scss';
+// @import 'Utils/palette.scss';
+
 
 // entête
 
@@ -92,20 +94,6 @@ header{
     transition: all 800ms ease-in-out;
     position: relative;
     z-index: 2;
-    &__active{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right:0;
-        background-color:rgba(137, 200, 250, 0.5) ;
-        opacity: 0.4;
-        border:  #003A68 solid 1px;
-        z-index: 1;
-        transition: 2s ease-in-out;
-        display: none;
-        
-    }
     &:hover,&:focus{
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
