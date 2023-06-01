@@ -64,10 +64,10 @@ header .logo {
   width: 100%;
   height: 27px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  padding-right: 40px;
+  justify-content: space-between;
   padding-left: 20px;
-  gap: 27px;
 }
 .menu__heading__text {
   font-family: "Shrikhand";
@@ -284,6 +284,7 @@ header .logo {
   }
   .menuEntrance__text {
     font-size: 13px;
+    width: 260px;
   }
   .menuEntrance__items {
     width: 91%;

@@ -348,6 +348,28 @@ svg:hover{
         }
     }
 }
+@media screen and (max-width: 360px){
+
+   .reservationText{
+    width: 260px;
+    font-size: 22px;
+   }
+    .information{
+        font-size: 14px;
+    }
+    .fonctioning__text {
+    
+        font-size: 20px;
+        width: 240px;
+    }
+    .fonctioning__button__text {
+        font-size: 13px;
+    }
+    .restaurantTitle {
+        font-size: 22px;
+    }
+
+}
 
 @media screen and (min-width: 768px) and (max-width: 1124px){
     .reservationText{
