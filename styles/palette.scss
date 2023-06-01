@@ -170,18 +170,18 @@ hr{
   transition: all 500ms ease-in-out;
  
  
-  &:hover &__hover{
+  &:hover &__hover , &:active &__hover{
     width: 59px;
   }
-  &:hover .fa-circle-check{
+  &:hover .fa-circle-check ,&:active  .fa-circle-check {
    opacity: 1;
    transform: rotate(360deg);
   }
-  &:hover &__text {
+  &:hover &__text,&:active &__text {
     width: 80%;
     border-radius: 15px 0px 0px 15px;
   }
-  &:hover h3 {
+  &:hover h3, &:active h3 {
     width: 85%;
    
   }

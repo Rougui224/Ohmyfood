@@ -159,18 +159,18 @@ header .logo {
   z-index: 1;
   transition: all 500ms ease-in-out;
 }
-.menuEntrance__items:hover .menuEntrance__items__hover {
+.menuEntrance__items:hover .menuEntrance__items__hover, .menuEntrance__items:active .menuEntrance__items__hover {
   width: 59px;
 }
-.menuEntrance__items:hover .fa-circle-check {
+.menuEntrance__items:hover .fa-circle-check, .menuEntrance__items:active .fa-circle-check {
   opacity: 1;
   transform: rotate(360deg);
 }
-.menuEntrance__items:hover .menuEntrance__items__text {
+.menuEntrance__items:hover .menuEntrance__items__text, .menuEntrance__items:active .menuEntrance__items__text {
   width: 80%;
   border-radius: 15px 0px 0px 15px;
 }
-.menuEntrance__items:hover h3 {
+.menuEntrance__items:hover h3, .menuEntrance__items:active h3 {
   width: 85%;
 }
 .menuEntrance__items__text {
