@@ -171,8 +171,11 @@ hr{
  
  
   &:hover &__hover{
-    display: flex;
     width: 59px;
+  }
+  &:hover .fa-circle-check{
+   opacity: 1;
+   transform: rotate(360deg);
   }
   &:hover &__text {
     width: 80%;
@@ -182,6 +185,7 @@ hr{
     width: 85%;
    
   }
+
   
 
 
@@ -233,6 +237,7 @@ hr{
     }
   }
   &__hover{
+    width: 0px;
     height: 69px;
     display: flex;
     justify-content: center;
@@ -242,8 +247,15 @@ hr{
     border-radius: 0px 15px 15px 0px;
     position: relative;
     z-index: 0;
-    display: none;
+   
     transition: all 500ms ease-in-out;
+    .fa-circle-check{
+     opacity: 0;
+     transition-duration: 500ms;
+     transition-property: transform opacity;
+     transition-delay:140ms, 170ms;
+  
+    }
   }
  
 }
@@ -319,16 +331,29 @@ hr{
   }
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:767px)and (max-width:1024px) {
   body {
     background-color: #fff;
   }
+  .menu__heading{
+    justify-content: center;
+   
+  }
+  .menuEntrance {
+    width: 78%;
+    margin: auto;
+}
+ 
   .menu{
     width: 70%;
     margin: auto;
     height: 1135px;
     border-radius: 40px 40px 0px 0px;
 
+  }
+  .menuEntrance__items__text {
+    gap: 20px;
+  
   }
   .footer{
     height: 90px;
@@ -356,9 +381,21 @@ hr{
   }
   .menu{
     height: 1135px;
-    width: 1055px;
+    width: 69%;
     margin: auto;
    border-radius: 40px 40px 0px 0px;
+  }
+  .menuEntrance {
+    width: 650px;
+    margin: auto;
+}
+  .menu__heading{
+    justify-content: center;
+    width: 634px;
+  }
+  .menuEntrance__items__text__price {
+    padding-right: 45px;
+  
   }
 
   .menuEntrance__items__text{

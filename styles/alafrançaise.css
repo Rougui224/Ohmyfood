@@ -164,8 +164,11 @@ header .logo {
   transition: all 500ms ease-in-out;
 }
 .menuEntrance__items:hover .menuEntrance__items__hover {
-  display: flex;
   width: 59px;
+}
+.menuEntrance__items:hover .fa-circle-check {
+  opacity: 1;
+  transform: rotate(360deg);
 }
 .menuEntrance__items:hover .menuEntrance__items__text {
   width: 80%;
@@ -217,6 +220,7 @@ header .logo {
   padding-right: 35px;
 }
 .menuEntrance__items__hover {
+  width: 0px;
   height: 69px;
   display: flex;
   justify-content: center;
@@ -226,8 +230,13 @@ header .logo {
   border-radius: 0px 15px 15px 0px;
   position: relative;
   z-index: 0;
-  display: none;
   transition: all 500ms ease-in-out;
+}
+.menuEntrance__items__hover .fa-circle-check {
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-property: transform opacity;
+  transition-delay: 140ms, 170ms;
 }
 
 .footer {
@@ -293,15 +302,25 @@ header .logo {
     font-size: 10px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
   body {
     background-color: #fff;
+  }
+  .menu__heading {
+    justify-content: center;
   }
   .menu {
     width: 70%;
     margin: auto;
     height: 1135px;
     border-radius: 40px 40px 0px 0px;
+  }
+  .menuEntrance__items__text {
+    gap: 20px;
+  }
+  .menuEntrance {
+    width: 78%;
+    margin: auto;
   }
   .footer {
     height: 90px;
@@ -327,9 +346,20 @@ header .logo {
   }
   .menu {
     height: 1135px;
-    width: 1055px;
+    width: 69%;
     margin: auto;
     border-radius: 40px 40px 0px 0px;
+  }
+  .menu__heading {
+    justify-content: center;
+    width: 634px;
+  }
+  .menuEntrance {
+    width: 650px;
+    margin: auto;
+  }
+  .menuEntrance__items__text__price {
+    padding-right: 45px;
   }
   .menuEntrance__items__text {
     gap: 77px;
